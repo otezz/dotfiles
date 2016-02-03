@@ -90,6 +90,7 @@ set incsearch
 set hlsearch
 set laststatus=2
 set clipboard=unnamedplus
+set cursorline                   " Highlight current line
 
 " Auto source .vimrc on save 
 augroup autosourcing
