@@ -5,7 +5,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -33,6 +33,14 @@ Plugin 'Lokaltog/vim-easymotion'
 
 " Fancy status line
 Plugin 'bling/vim-airline'
+
+" Snippets
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+
+" Optional for snippets:
+Plugin 'honza/vim-snippets'
 
 " Code completion
 "Plugin 'Valloric/YouCompleteMe'
@@ -106,6 +114,9 @@ nmap <Leader><space> :nohlsearch<cr>
 
 " Fast saves
 nmap <leader>w :w!<cr>
+
+" Duplicate line
+vmap D Yp
 
 " Down is really the next line
 nnoremap j gj
