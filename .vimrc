@@ -29,7 +29,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 
 " Jump around documents
-Plugin 'Lokaltog/vim-easymotion'
+Plugin 'easymotion/vim-easymotion'
 
 " Fancy status line
 Plugin 'bling/vim-airline'
