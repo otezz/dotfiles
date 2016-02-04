@@ -42,6 +42,9 @@ Plugin 'garbas/vim-snipmate'
 " Optional for snippets:
 Plugin 'honza/vim-snippets'
 
+" Syntax checker
+Plugin 'scrooloose/syntastic'
+
 " Code completion
 "Plugin 'Valloric/YouCompleteMe'
 
@@ -99,6 +102,17 @@ set hlsearch
 set laststatus=2
 set clipboard=unnamedplus
 set cursorline                   " Highlight current line
+
+" Syntastic Settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_php_checkers=['php']
 
 " Auto source .vimrc on save 
 augroup autosourcing
