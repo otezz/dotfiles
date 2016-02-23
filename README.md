@@ -3,8 +3,8 @@
 ### Setup Vim
 Via curl
     
-    sh -c "$(curl -fsSL https://github.com/otezz/dotfiles/blob/master/setup-vim.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/otezz/dotfiles/master/setup-vim.sh)"
 
 Via wget
     
-    sh -c "$(wget https://github.com/otezz/dotfiles/blob/master/setup-vim.sh -O -)"
+    sh -c "$(wget https://raw.githubusercontent.com/otezz/dotfiles/master/setup-vim.sh -O -)"
