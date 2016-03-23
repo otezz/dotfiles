@@ -45,6 +45,9 @@ Plugin 'honza/vim-snippets'
 " Syntax checker
 Plugin 'scrooloose/syntastic'
 
+" surround.vim: quoting/parenthesizing made simplsurround.vim: quoting/parenthesizing made simplee
+Plugin 'tpope/vim-surround'
+
 " Code completion
 "Plugin 'Valloric/YouCompleteMe'
 
@@ -113,6 +116,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_php_checkers=['php']
+
+" Forget sudo ??
+cmap w!! w !sudo tee > /dev/null %<CR>
 
 " Auto source .vimrc on save 
 augroup autosourcing
